@@ -1,0 +1,15 @@
+.moduleCard {
+  background-color: var(--darkGrey);
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 400px;
+  transition: background-color 0.2s;
+}
+
+.moduleCard:hover {
+  background-color: #004a77;
+}
+
+.moduleCard h2 {
+  margin-bottom: 10px;
+}
