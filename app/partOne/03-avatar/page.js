@@ -2,17 +2,17 @@ import React from "react";
 import styles from "./03-avatar.module.css";
 
 const data = [
-  { id: "Ander", alt: "123" },
-  { id: "Bartender", alt: "123" },
-  { id: "Lady", alt: "123" },
-  { id: "Froge", alt: "123" },
-  { id: "Nelly", alt: "123" },
+  { id: "Ander", alt: "a man in a hoodie" },
+  { id: "Bartender", alt: "a bartender" },
+  { id: "Lady", alt: "a lady in a gym outfit" },
+  { id: "Froge", alt: "a happy frog" },
+  { id: "Nelly", alt: "a courious cat" },
 ];
 
-function Avatar(data) {
+function Avatar({ id, alt }) {
   return (
     <button className={styles.btn}>
-      <img src={`/assets/partOne/${data.id}.png`} alt={data.alt} />
+      <img src={`/assets/partOne/${id}.png`} alt={alt} />
     </button>
   );
 }
@@ -22,8 +22,8 @@ export default function page() {
     <div className="exerciseContainer">
       <em>Iterate an array and render an avatar for each item</em>
       <div className={styles.avatarContainer}>
-        {data.map((avatar) => (
-          <Avatar key={avatar.id} id={avatar.id} alt={avatar.alt} />
+        {data.map(({ id, alt }) => (
+          <Avatar key={id} id={id} alt={alt} />
         ))}
       </div>
     </div>
