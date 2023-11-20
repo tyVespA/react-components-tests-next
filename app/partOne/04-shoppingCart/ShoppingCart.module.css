@@ -1,0 +1,17 @@
+.tableHeading,
+.gridContainer > div {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.tableHeading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.gridContainer > div {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--darkGrey);
+  align-items: center;
+}
