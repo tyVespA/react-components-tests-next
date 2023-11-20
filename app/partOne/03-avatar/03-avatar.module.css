@@ -1,0 +1,16 @@
+.btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: rotate(-20deg);
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
