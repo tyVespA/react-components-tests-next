@@ -18,9 +18,11 @@ function Page() {
           </ul>
         </section>
         <section>
-          <h2>Components</h2>
+          <h2>Iteration</h2>
           <ul>
-            <li>one</li>
+            <Link href="/partOne/03-avatar">
+              <li>Avatar selection</li>
+            </Link>
             <li>two</li>
           </ul>
         </section>
