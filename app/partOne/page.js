@@ -23,7 +23,9 @@ function Page() {
             <Link href="/partOne/03-avatar">
               <li>Avatar selection</li>
             </Link>
-            <li>two</li>
+            <Link href="/partOne/04-shoppingCart">
+              <li>Shopping cart</li>
+            </Link>
           </ul>
         </section>
       </div>
