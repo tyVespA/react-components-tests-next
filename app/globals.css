@@ -73,12 +73,22 @@ a {
   margin-top: 50px;
   text-align: start;
 
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  justify-items: center;
 }
 
 .exercisesContainer h2 {
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.exercisesContainer ul {
+  list-style-type: none;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .exercisesContainer a {
