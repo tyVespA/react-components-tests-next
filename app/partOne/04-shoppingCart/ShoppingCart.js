@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ShoppingCart.module.css";
 
-export default function ShoppingCart() {
+export default function ShoppingCart({ items }) {
   return (
     <div>
       <div className={styles.tableHeading}>
@@ -10,16 +10,13 @@ export default function ShoppingCart() {
         <strong>Price</strong>
       </div>
       <div className={styles.gridContainer}>
-        <div>
-          <img src="/assets/partOne/chair.jpg" alt="asset" />
-          <p>item name</p>
-          <p>item price</p>
-        </div>
-        <div>
-          <img src="/assets/partOne/chair.jpg" alt="asset" />
-          <p>item name</p>
-          <p>item price</p>
-        </div>
+        {items.map((item) => (
+          <div key={item.id}>
+            <img src={item.imageSrc} alt={item.imageAlt} />
+            <p>{item.title}</p>
+            <p>{item.price}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
