@@ -28,6 +28,12 @@ function Page() {
             </Link>
           </ul>
         </section>
+        <section>
+          <h2>Conditional rendering</h2>
+          <ul>
+            <li>User Profile with Badges</li>
+          </ul>
+        </section>
       </div>
     </main>
   );
