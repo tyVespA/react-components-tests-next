@@ -9,7 +9,8 @@ const myFont = localFont({
 
 export const metadata = {
   title: "React exercises repository",
-  description: "Useful to review react concepts",
+  description:
+    "Useful to review and get better understanding of react concepts",
 };
 
 export default function RootLayout({ children }) {
