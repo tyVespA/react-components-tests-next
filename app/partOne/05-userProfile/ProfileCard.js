@@ -2,34 +2,40 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ProfileCard.module.css";
 
-export default function ProfileCard() {
+export default function ProfileCard({ profile }) {
   return (
     <div className={styles.profileCard}>
+      <div
+        className={styles.banner}
+        style={{ backgroundColor: `${profile.bannerColor}` }}
+      ></div>
       <img
-        src="/assets/partOne/chair.jpg"
-        alt=""
-        className={styles.bannerImg}
-      />
-      <div className={styles.bannerColor} style={{ backgroundColor: "" }}></div>
-      <img
-        src="/assets/partOne/Ander.png"
+        src={`/assets/partOne/${profile.imageSrc}`}
         alt=""
         className={styles.profileImg}
       />
       <div className={styles.userStats}>
-        <p>MiyM</p>
-        <p>Member since: xx</p>
-        <p>Awards:</p>
-        <div className={styles.medalsContainer}>
-          <button
-            className={styles.medal}
-            title="Got 5 hearts from other users"
-          >
-            🫶
-          </button>
-          <button className={styles.medal}>🩵</button>
-          <button className={styles.medal}>🦃</button>
-        </div>
+        <p className={styles.name}>{profile.name}</p>
+        <p>
+          Member since:{" "}
+          <span className={styles.memberSince}>{profile.joinDate}</span>
+        </p>
+        {profile.badges.length > 0 && (
+          <div>
+            <p>Awards:</p>
+            <div className={styles.medalsContainer}>
+              {profile.badges.map((badge) => (
+                <button
+                  className={styles.medal}
+                  title={badge.title}
+                  key={badge.label}
+                >
+                  {badge.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
