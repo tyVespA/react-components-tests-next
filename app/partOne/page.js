@@ -31,7 +31,9 @@ function Page() {
         <section>
           <h2>Conditional rendering</h2>
           <ul>
-            <li>User Profile with Badges</li>
+            <Link href="/partOne/05-userProfile">
+              <li>User Profile with Badges</li>
+            </Link>
           </ul>
         </section>
       </div>
