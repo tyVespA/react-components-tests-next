@@ -2,11 +2,11 @@
   background-color: #232428;
   border-radius: 24px;
   overflow: hidden;
-  max-width: 300px;
+  width: 300px;
   position: relative;
 }
 
-.bannerImg {
+.banner {
   object-fit: cover;
   height: 65px;
   width: 100%;
@@ -20,9 +20,13 @@
 }
 
 .profileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: left top;
   margin-left: 15px;
   transform: translateY(-50%);
-  width: 100px;
 }
 
 .userStats {
@@ -33,14 +37,18 @@
   border-radius: 12px;
 }
 
-.userStats p:first-child {
+.memberSince {
+  font-size: 0.8rem;
+}
+
+.name {
   border-bottom: 1px solid var(--darkGrey);
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
 
-.userStats p:nth-child(2),
-.userStats p:nth-child(3) {
+.userStats > div p:first-child,
+.userStats p:nth-child(2) {
   font-size: 0.9rem;
   color: var(--grey);
   margin-bottom: 5px;
