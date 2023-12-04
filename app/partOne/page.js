@@ -36,6 +36,14 @@ function Page() {
             </Link>
           </ul>
         </section>
+        <section>
+          <h2>Conditional styling</h2>
+          <ul>
+            <Link href="/partOne/06-sidenoteTypes">
+              <li>Dinamically styled components</li>
+            </Link>
+          </ul>
+        </section>
       </div>
     </main>
   );
