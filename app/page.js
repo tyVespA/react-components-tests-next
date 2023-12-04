@@ -12,8 +12,8 @@ export default function Home() {
             Components, mapping over data, conditional rendering{" "}
           </ModuleCard>
         </Link>
-        <Link href="/partOne">
-          <ModuleCard title="test1">test2</ModuleCard>
+        <Link href="/partTwo">
+          <ModuleCard title="Part two">Part two</ModuleCard>
         </Link>
         <Link href="/partOne">
           <ModuleCard title="test1">test2</ModuleCard>
